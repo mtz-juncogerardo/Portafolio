@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-size: 16px;
   color: #333333;
@@ -47,6 +51,7 @@ header{
   padding-left: 100px;
   filter: opacity(0.5);
   transition: all 0.3s;
+  outline: none;
 }
 
 .navbar-logo img{
@@ -74,6 +79,7 @@ header{
   text-decoration: none;
   font-weight: bold;
   transition: 0.2s;
+  outline: none;
 }
 
 .nav-item a:hover{
@@ -85,12 +91,13 @@ header{
 }
 
 .hero-content{
-  height: 80%;
+  height: 70%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 200px;
+  margin-top: 50px;
 }
 
 .hero-text{
@@ -108,4 +115,223 @@ header{
   font-weight: 300;
   font-size: 0.5em;
   margin-top: 20px;
+}
+
+/* ---------About Me---------- */
+
+#about{
+  height: 130vh;
+  width: 100vw;
+  background-image: url('Images/l-curve.png');
+  background-size: 38em;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-position-y: 5em;
+  margin-top: 5em;
+}
+
+.about-title-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.about-title{
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.line{
+  background-color: #333333;
+  height: 4px;
+  width: 100px;
+  position: relative;
+  top: 10px;
+}
+
+.about-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-desc img{
+  height: 250px;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.saludo{
+  font-size: 2em;
+  font-weight: bold;
+  color: #333333;
+  margin: 20px 0px;
+}
+
+.about-desc h1{
+  font-weight: bold;
+  font-size: 1.2em;
+  width: 70%;
+  color: #333333;
+  text-align: justify;
+}
+
+.about-things{
+  display: grid;
+  grid-template: 5% 1fr 1fr 1fr /1fr 1fr 20%;
+  grid-template-areas: ". . ." ". consultoria ." "desarrollo . ." ". diseño .";
+}
+
+
+.consultoria{
+  grid-area: consultoria;
+  position: relative;
+  top: 4em;
+}
+.desarrollo{
+  grid-area: desarrollo;
+}
+.diseño{
+  grid-area: diseño;
+  position: relative;
+  bottom: 4em;
+}
+
+.things{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.things img{
+  height: 90px;
+  background-color: #6db0d6;
+  border-radius: 100px;
+}
+
+.desarrollo img{
+  border-radius: 50%;
+  width: 5.8em;
+}
+
+.things h2{
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.things span{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px;
+}
+
+/* ------Tecnologias------- */
+.tecnologias{
+  height: 100vh;
+}
+
+.tec-title-container{
+  margin-bottom: 20px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tec-title{
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.line2{
+  background-color: #333333;
+  height: 4px;
+  width: 200px;
+  position: relative;
+  top: 10px;
+}
+
+.tec-box{
+  background-color: #c6c6c6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 80vh;
+  width: 100vw;
+  padding: 100px;
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+
+}
+
+.tec-img{
+  height: 90px;
+  margin: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tec-img:hover{
+  transform: scale(1.4);
+}
+
+.tec-img:nth-child(9),
+.tec-img:nth-child(10){
+  height: 150px;
+}
+
+/* -----modal------ */
+
+#modal{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 3;
+  background-color: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#close-btn{
+  cursor: pointer;
+}
+
+.modal-content{
+  background-color: #f6f6f6;
+  height: 28em;
+  width: 40em;
+  border-radius: 10px;
+  box-shadow: 6px 6px 20px black;
+}
+
+.modal-header{
+  background-color: #1d6aa7;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.9em;
+  height: 3em;
+  padding: 20px 50px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.modal-body{
+  padding: 50px;
+  text-align: justify;
+  font-size: 1.3em;
 }
