@@ -96,14 +96,14 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 200px;
+  padding: 0px 100px;
   margin-top: 50px;
 }
 
 .hero-text{
   text-transform: uppercase;
   font-size: 2.5em;
-  min-width: 11em;
+  width: 11em;
   font-weight: bold;
   box-shadow: 0px 0px 60px;
   height: 6em;
@@ -122,11 +122,11 @@ header{
 #about{
   height: 130vh;
   width: 100vw;
-  background-image: url('Images/l-curve.png');
-  background-size: 38em;
+  /* background-image: url('Images/r-curve.png'); */
+  /* background-size: 38em;
   background-repeat: no-repeat;
-  background-position: top left;
-  background-position-y: 5em;
+  background-position: top right;
+  background-position-y: 5em; */
   margin-top: 5em;
 }
 
@@ -139,9 +139,9 @@ header{
 }
 
 .about-title{
-  text-transform: uppercase;
-  font-size: 2em;
-  font-weight: bold;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 1em;
 }
 
 .line{
@@ -162,6 +162,9 @@ header{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: inset 0px 0px 200px #1d6aa7;
+  border-radius: 50% 0 50% 50%;
+  margin-top: 2em;
 }
 
 .about-desc img{
@@ -169,25 +172,32 @@ header{
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
-.saludo{
-  font-size: 2em;
-  font-weight: bold;
-  color: #333333;
-  margin: 20px 0px;
+.desc-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 35em;
+  margin: 40px;
+  padding: 30px;
 }
 
-.about-desc h1{
+.desc-text h1{
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.1em;
   width: 70%;
   color: #333333;
   text-align: justify;
+  width: 100%;
 }
 
 .about-things{
   display: grid;
-  grid-template: 5% 1fr 1fr 1fr /1fr 1fr 20%;
-  grid-template-areas: ". . ." ". consultoria ." "desarrollo . ." ". diseño .";
+  grid-template: 1fr 1fr /1fr 1fr;
+  grid-template-areas: "consultoria desarrollo" "diseño optimizacion";
+  grid-column-gap: 3em;
+  width: 50%;
+  padding-right: 5em;
 }
 
 
@@ -211,17 +221,19 @@ header{
   justify-content: center;
   align-items: center;
   text-align: center;
+  box-shadow: 0px 0px 10px lightgrey;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.franja{
+  width: 100%;
+  background-color: #6db0d6;
 }
 
 .things img{
   height: 90px;
-  background-color: #6db0d6;
-  border-radius: 100px;
-}
-
-.desarrollo img{
-  border-radius: 50%;
-  width: 5.8em;
 }
 
 .things h2{
@@ -230,9 +242,8 @@ header{
 }
 
 .things span{
-  font-size: 1.2em;
   font-weight: bold;
-  margin: 10px;
+  margin-bottom: 5px;
 }
 
 /* ------Tecnologias------- */
