@@ -10,9 +10,11 @@
     mis habilidades."
     />
     <meta name="author" content="Gerardo Martínez Junco" />
+    <!-- FontAwesome Script -->
+    <script src="https://kit.fontawesome.com/91ecec87c1.js"></script>
     <!-- Google Font -->
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
       rel="stylesheet"
     />
     <!-- Main css -->
@@ -31,7 +33,7 @@
           <ul class="navbar-list">
             <li class="nav-item"><a href="#">Inicio</a></li>
             <li class="nav-item"><a href="#about">Acerca de Mi</a></li>
-            <li class="nav-item"><a href="#proyects">Mis Proyectos</a></li>
+            <li class="nav-item"><a href="#proyectos">Mis Proyectos</a></li>
             <li class="nav-item"><a href="#">Mi Blog</a></li>
             <li class="nav-item"><a href="#contact">Contacto</a></li>
           </ul>
@@ -70,44 +72,50 @@
         </div>
 
         <div class="about-things">
-          <div class="things consultoria">
-            <figure class="franja">
-              <img src="Images/portafolio.png" alt="" />
-            </figure>
-            <span>Consultoría Web</span>
-            <h2>
-              Asesoría en estrategias, posicionamiento, y usabilidad para crear
-              proyectos web eficientes.
-            </h2>
+          <div class="about-row">
+            <div class="things consultoria">
+              <figure class="franja">
+                <img src="Images/portafolio.png" alt="" />
+              </figure>
+              <span>Consultoría Web</span>
+              <h2>
+                Asesoría en estrategias, posicionamiento, y usabilidad para
+                crear proyectos web eficientes.
+              </h2>
+            </div>
+            <div class="things desarrollo">
+              <figure class="franja">
+                <img src="Images/web-code.png" alt="" />
+              </figure>
+              <span>Desarrollo Web</span>
+              <h2>
+                Construcción de sitios y aplicaciones web escalables,
+                interactivas y funcionales. Programación frontend y backend.
+              </h2>
+            </div>
           </div>
-          <div class="things desarrollo">
-            <figure class="franja">
-              <img src="Images/web-code.png" alt="" />
-            </figure>
-            <span>Desarrollo Web</span>
-            <h2>
-              Construcción de sitios y aplicaciones web escalables, interactivas
-              y funcionales. Programación frontend y backend.
-            </h2>
-          </div>
-          <div class="things diseño">
-            <figure class="franja">
-              <img src="Images/web-design.png" alt="" />
-            </figure>
-            <span>Diseño Adaptable</span>
-            <h2>
-              Diseños que se adaptan a cualquier dispositivo; pantallas,
-              laptops, tablets y celulares.
-            </h2>
-          </div>
-          <div class="things optimizacion">
-            <figure class="franja">
-              <img src="Images/optimizacion.png" alt="" />
-            </figure>
-            <span>Aplicaciones Rapidas</span>
-            <h2>
-              Optimización de sitios y aplicaciones web para carga rapida y fluida.
-            </h2>
+
+          <div class="about-row">
+            <div class="things diseño">
+              <figure class="franja">
+                <img src="Images/web-design.png" alt="" />
+              </figure>
+              <span>Diseño Adaptable</span>
+              <h2>
+                Diseños que se adaptan a cualquier dispositivo; pantallas,
+                laptops, tablets y celulares.
+              </h2>
+            </div>
+            <div class="things optimizacion">
+              <figure class="franja">
+                <img src="Images/optimizacion.png" alt="" />
+              </figure>
+              <span>Aplicaciones Rapidas</span>
+              <h2>
+                Optimización de sitios y aplicaciones web para carga rapida y
+                fluida.
+              </h2>
+            </div>
           </div>
         </div>
       </div>
@@ -124,13 +132,12 @@
         <img class="tec-img sass" src="Images/sass.png" alt="" />
         <img class="tec-img boot" src="Images/bootstrap.png" alt="" />
         <img class="tec-img node" src="Images/backend-tec.png" alt="" />
-        <img class="tec-img post" src="Images/postgresql.png" alt="" />
-        <img class="tec-img dock" src="Images/docker.png" alt="" />
         <img class="tec-img aws" src="Images/aws.png" alt="" />
         <img class="tec-img mongo" src="Images/mongoDB.png" alt="" />
         <img class="tec-img hand" src="Images/handlebars.png" alt="" />
       </div>
 
+      <!-- Modales -->
       <div id="modal">
         <div class="modal-content">
           <div class="modal-header">
@@ -141,6 +148,45 @@
             <p id="modal-desc">
               modal desc.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos">
+      <div class="project-box">
+        <div class="project-image">
+          <img src="Images/momentum.svg" alt="momentum" />
+        </div>
+
+        <div class="project-info">
+          <div class="project-header">
+            <span>My Home Page</span>
+            <div class="project-icons">
+              <i class="fab fa-node-js"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+            </div>
+          </div>
+          <div class="project-body">
+            <h2>
+              Esta app permite darte una pagina principal personal con tu nombre
+              una to-do list y frases generadas aleatorias. Esta aplicación es
+              totalmente personalizable, puedes cambiar el estilo de letra,
+              color, fondo,etc. Tambien tiene una Api para mostrar el clima en
+              tu ubicación.
+            </h2>
+          </div>
+          <div class="project-footer">
+            <a
+              href="https://github.com/mtz-juncogerardo/MyHomePage"
+              class="blue-btn"
+              target="_blank"
+              >Ver en Github</a
+            >
+            <a class="purple-btn">Ir a la Pagina</a>
           </div>
         </div>
       </div>

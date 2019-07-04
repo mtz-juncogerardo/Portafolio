@@ -27,14 +27,6 @@ const tech = {
       title:"Node JS y Express JS",
       description: "NodeJS es una herramienta que nos permite ejecutar Javascript (El lenguaje de programación) del lado del servidor, gracias a esto podemos crear aplicaciones web escalables. <br><br>ExpressJS es un framework que trabaja en conjunto con node y nos ofrece muchas herramientas que hace el escribir NodeJS mucho mas facil"
     },
-  postgre:{
-      title:"PostgreSQL",
-      description: "Es una sistema de codigo abierto que permite gestionar bases de datos relacionales. <br><br>Con esta herramienta podremos conectar bases de datos a nuestras aplicaciones web."
-    },
-  docker:{
-      title:"Docker",
-      description:"Es una herramienta que introduce el concepto de los contenedores en el software. <br><br>Basicamente agrupamos el entorno que necesita el software para correr y de esta manera no importa desde que computadora ejecutes el programa, siempre funcionara igual."
-    },
   aws:{
       title:"Amazon Web Services",
       description: "Es una plataforma en la nube que ofrece distintos servicios de infraestructura. <br><br>Por ejemplo: redes, almacenamiento, servicios para aplicaciones, seguridad, etc."

@@ -12,7 +12,7 @@ body{
   font-size: 16px;
   color: #333333;
   background-color: #f6f6f6;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Nunito', sans-serif;
   overflow-x: hidden;
 }
 
@@ -122,11 +122,11 @@ header{
 #about{
   height: 130vh;
   width: 100vw;
-  /* background-image: url('Images/r-curve.png'); */
-  /* background-size: 38em;
+  background-image: url('Images/l-curve.png');
+  background-size: 38em;
   background-repeat: no-repeat;
-  background-position: top right;
-  background-position-y: 5em; */
+  background-position: top left;
+  background-position-y: 5em;
   margin-top: 5em;
 }
 
@@ -136,6 +136,7 @@ header{
   justify-content: center;
   align-items: center;
   width: 100vw;
+  margin-bottom: 5em;
 }
 
 .about-title{
@@ -162,9 +163,8 @@ header{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 0px 0px 200px #1d6aa7;
-  border-radius: 50% 0 50% 50%;
   margin-top: 2em;
+  width: 50vw;
 }
 
 .about-desc img{
@@ -184,7 +184,7 @@ header{
 
 .desc-text h1{
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.2em;
   width: 70%;
   color: #333333;
   text-align: justify;
@@ -192,27 +192,16 @@ header{
 }
 
 .about-things{
-  display: grid;
-  grid-template: 1fr 1fr /1fr 1fr;
-  grid-template-areas: "consultoria desarrollo" "diseño optimizacion";
-  grid-column-gap: 3em;
-  width: 50%;
-  padding-right: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50vw;
+  padding: 2em 5em 0 5em;
 }
 
-
-.consultoria{
-  grid-area: consultoria;
-  position: relative;
-  top: 4em;
-}
-.desarrollo{
-  grid-area: desarrollo;
-}
-.diseño{
-  grid-area: diseño;
-  position: relative;
-  bottom: 4em;
+.about-row{
+  display: flex;
+  justify-content: space-between;
 }
 
 .things{
@@ -225,6 +214,7 @@ header{
   background-color: #f6f6f6;
   border-radius: 5px;
   padding: 10px;
+  width: 15em;
 }
 
 .franja{
@@ -239,6 +229,7 @@ header{
 .things h2{
   font-size: 1em;
   font-weight: normal;
+  text-align: left;
 }
 
 .things span{
@@ -275,7 +266,7 @@ header{
 }
 
 .tec-box{
-  background-color: #c6c6c6;
+  background-color: rgb(202, 202, 221);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -288,7 +279,7 @@ header{
 
 .tec-img{
   height: 90px;
-  margin: 30px;
+  margin: 30px 60px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -297,8 +288,8 @@ header{
   transform: scale(1.4);
 }
 
-.tec-img:nth-child(9),
-.tec-img:nth-child(10){
+.tec-img:nth-child(7),
+.tec-img:nth-child(8){
   height: 150px;
 }
 
@@ -345,4 +336,96 @@ header{
   padding: 50px;
   text-align: justify;
   font-size: 1.3em;
+}
+
+/* -----------PROYECTOS!!!-------- */
+
+#proyectos{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em 10em;
+}
+
+.project-box{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 20px gray;
+  border-radius: 10px;
+  width: 100%;
+  height: 40%;
+  padding: 10px;
+}
+
+.project-image{
+  height: 100%;
+}
+
+.project-image img{
+  height: 100%;
+}
+
+.project-info{
+  height: 100%;
+  padding: 10px 30px;
+}
+
+.project-info{
+  display: fleX;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-header{
+  text-align: center;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-icons{
+  font-size: 0.6em;
+}
+
+.project-body h2{
+  text-align: left;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.project-footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-footer a{
+  margin: 0px 10px;
+  height: 2.2em;
+  width: 10em;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px gray;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-footer a:active{
+  box-shadow: 0px 0px 5px gray;
+}
+
+.blue-btn{
+  background-color: #1d6aa7;
+}
+
+.purple-btn{
+  background-color: #8E6FCE;
 }
