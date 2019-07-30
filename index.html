@@ -275,12 +275,14 @@
     </footer>
 
     <script src="app.min.js" charset="utf-8"></script>
+    <script>
     //WA for mobile devices
     const whatsappLink = document.getElementById('whatsapp');
-  let width = screen.width;
-  let link = "https://wa.me/524427487722?text=Hola%20Gerardo%20Estuve%20viendo%20tu%20portafolio,%20y%20me%20interesa%20ponerme%20en%20contacto%20contigo."
-  if (width < 769) {
-    whatsappLink.setAttribute("href", link);
-  }
+      let width = screen.width;
+      let link = "https://wa.me/524427487722?text=Hola%20Gerardo%20Estuve%20viendo%20tu%20portafolio,%20y%20me%20interesa%20ponerme%20en%20contacto%20contigo."
+      if (width < 769) {
+        whatsappLink.setAttribute("href", link);
+      }
+    </script>
   </body>
 </html>
