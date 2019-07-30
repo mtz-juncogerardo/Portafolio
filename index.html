@@ -265,7 +265,7 @@
       <div class="footer-container">
         <h4 class="footer-title">Contactame!</h4>
         <div class="contact-icons">
-            <a href="https://web.whatsapp.com/send?phone=524427487722&text=Hola%20Gerardo%20Estuve%20viendo%20tu%20portafolio,%20y%20me%20interesa%20ponerme%20en%20contacto%20contigo." target="_blank" id="whatsapp" class="fab fa-whatsapp"></a>
+            <a id="whatsapp" href="https://web.whatsapp.com/send?phone=524427487722&text=Hola%20Gerardo%20Estuve%20viendo%20tu%20portafolio,%20y%20me%20interesa%20ponerme%20en%20contacto%20contigo." target="_blank" id="whatsapp" class="fab fa-whatsapp"></a>
             <a href="https://www.linkedin.com/in/gerardo-mart%C3%ADnez-junco-231737180/" target="_blank" class="fab fa-linkedin-in"></a>
             <a href="https://github.com/mtz-juncogerardo" target="_blank" class="fab fa-github"></a>
             <a href="mailto:mtz.juncogerardo@gmail.com" target="_blank" class="fas fa-envelope"></a>
@@ -275,5 +275,12 @@
     </footer>
 
     <script src="app.min.js" charset="utf-8"></script>
+    //WA for mobile devices
+    const whatsappLink = document.getElementById('whatsapp');
+  let width = screen.width;
+  let link = "https://wa.me/524427487722?text=Hola%20Gerardo%20Estuve%20viendo%20tu%20portafolio,%20y%20me%20interesa%20ponerme%20en%20contacto%20contigo."
+  if (width < 769) {
+    whatsappLink.setAttribute("href", link);
+  }
   </body>
 </html>
