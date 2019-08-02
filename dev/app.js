@@ -1,9 +1,20 @@
+//Hamburger Menu
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.navbar-list');
+
+hamburger.addEventListener('click',()=>{
+
+    navLinks.classList.toggle('open');
+
+});
+
+
+//Modal
 const modalTitle = document.getElementById('modal-title');
 const modal = document.getElementById('modal');
 const modalBody = document.getElementById('modal-desc');
 const closeBtn = document.getElementById('close-btn');
 const tecImage = document.getElementsByClassName('tec-img');
-
 
 //Technology Description Object
 const tech = {
@@ -38,7 +49,11 @@ const tech = {
   handlebars:{
       title:"Handlebars Template",
       description: "Handlebars es un motor de plantillas. <br><br>Este nos permite al momento de escribir HTML concatenar variables que haran que el sitio web se presente con distinta información dependiendo de la funcionalidad que le dimos."
-    }
+    },
+  react:{
+    title: "React",
+    description: "React es una Libreria de Javascript que introduce el copncepto de los componentes. Basicamente nos permite armar un sitio web como si fueran piezas de lego, (Lo que facilita muchisimo el desarrollo). No solo esto sino que esta tecnologia tambien nos permite hacer aplicaciónes moviles usando React Native."
+  }
 };
 
 
@@ -91,6 +106,10 @@ function openModal(e) {
     case "hand":
     modalTitle.innerText = tech.handlebars.title;
     modalBody.innerHTML = tech.handlebars.description;
+    break;
+    case "react":
+      modalTitle.innerText = tech.react.title;
+      modalBody.innerHTML = tech.react.description;
   }
 }
 
