@@ -47,8 +47,8 @@ const tech = {
       description: "MongoDB es un sistema de base de datos no relacional que permite crear bases de datos de manera rapida y dinamica. <br><br>Esta base de datos se usa cuando el esquema de la base de datos es sencillo, o cuando no es necesario usar una base de datos relacional."
     },
   handlebars:{
-      title:"Handlebars Template",
-      description: "Handlebars es un motor de plantillas. <br><br>Este nos permite al momento de escribir HTML concatenar variables que haran que el sitio web se presente con distinta información dependiendo de la funcionalidad que le dimos."
+      title:"Angular",
+      description: "Angular es una libreria de Google que permite armar sitios web de una sola pagina dividiendo el codigo en componentes"
     },
   react:{
     title: "React",
@@ -63,7 +63,7 @@ for (let item of tecImage) {
 }
 
 function openModal(e) {
-
+ 
   modal.style.display = "flex";
 
   switch (e.target.classList[1]) {
