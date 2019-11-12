@@ -301,7 +301,7 @@ header {
 }
 #proyectos {
   width: 100vw;
-  height: 180vh;
+  height: 270vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
